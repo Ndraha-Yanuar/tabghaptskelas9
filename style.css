@@ -1,132 +1,327 @@
-.top {
-  height: 1400px;
-  width: 80vw;
-  position: relative;
-  background-color: burlywood;
-  left: 10vw;
-  right: 10vw;
-  top: -8px;
-  border: 3px solid darkseagreen;
+body {
+    background-color: whitesmoke;
 }
-.datar {
-  position: fixed;
-  top: -4px;
-  height: 200px;
-  width: 80vw;
-  background-color: white;
-  color: brown;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-  border-bottom: 5px solid darkkhaki;
-  z-index: 9999;
+
+.parent {
+    width: 80vw;
+    height: 500vh;
+    border: 2px solid black;
+    position: relative;
+    left: 10vw;
+    top: -9.5px;
+    background-color: #b8e0d2;
 }
-.datar li {
-  font-size: 30px;
-  font-weight: 800;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.navbar {
+    width: 80vw;
+    height: 15vh;
+    background-color: #b8e0d2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border-top: 3px solid black;
+    top: -1px;
+    z-index: 999;
 }
-.datar li:hover {
-  border-bottom: 2px solid brown;
-  color: black;
-  transition: 0.4s ease-in-out;
-  border-radius: 10%;
+
+.navbar p {
+    margin-left: 2%;
+    color: black;
+    font-weight: 900;
+    font-size: 180%;
+
 }
-.satu {
-  height: 1096px;
-  width: 25vw;
-  background-color: rgb(250, 204, 143);
-  top: 202px;
-  position: absolute;
-  border: 2px solid white;
+
+.navbar p span {
+    color: whitesmoke;
+    font-size: 90%;
+    font-style: italic;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.satu h1 {
-  color: coral;
-  text-align: center;
-  font-size: 35px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 25px;
+    color: black;
+    font-size: 120%;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.satu p {
-  color: black;
-  font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify;
-  padding: 0 4px;
+
+.navbar .display {
+    display: flex;
 }
-.satu img {
-  display: inline-block;
-  justify-content: center;
-  margin-left: 55px;
-  height: 200px;
-  width: auto;
+
+.navbar img {
+    display: inline-block;
+    width: 80px;
+    margin-right: 10px;
 }
-.dua {
-  height: 1096px;
-  width: 25vw;
-  background-color: rgb(247, 213, 209);
-  top: 202px;
-  position: absolute;
-  border: 2px solid white;
-  left: 27.5vw;
+
+.bg {
+    width: 80vw;
+    height: 85vh;
+    position: absolute;
+    top: 15vh;
+    background-image: url(Bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.dua h1 {
-  color: brown;
-  text-align: center;
-  font-size: 35px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.bg p {
+    font-size: 60px;
+    margin-top: 4px;
+    margin-left: 18px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: right;
 }
-.dua p {
-  color: black;
-  font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify;
-  padding: 0 4px;
+
+.bg p span {
+    color: brown;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.dua img {
-  display: inline-block;
-  justify-content: center;
-  margin-left: 58px;
+
+.navbar a:hover {
+    border-bottom: 4px solid salmon;
+    border-radius: 20%;
+    transition: 0.2s ease-in-out;
+
 }
-.tiga {
-  height: 1096px;
-  width: 25vw;
-  background-color: rgb(214, 186, 163);
-  top: 202px;
-  position: absolute;
-  border: 2px solid white;
-  right: 0;
+
+.product {
+    position: absolute;
+    top: 100vh;
+    display: flex;
+    height: 30vh;
+    width: 80vw;
+    border-bottom: 2px solid black;
+    justify-content: center;
+    align-items: center;
 }
-.tiga h1 {
-  color: aqua;
-  text-align: center;
-  font-size: 35px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.parent .product a {
+    background-color: blanchedalmond;
+    text-decoration: none;
+    margin: 0 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
 }
-.tiga p {
-  color: black;
-  font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify;
-  padding: 0 4px;
+
+.parent .pen {
+    position: absolute;
+    top: 130vh;
+    height: 100vh;
+    width: 80vw;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-.tiga img {
-  display: inline-block;
-  justify-content: center;
-  margin-left: 80px;
-  height: 300px;
-  width: auto;
+
+.parent .pen .pen1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-.bottom {
-  position: absolute;
-  width: 79.8vw;
-  height: 97px;
-  background-color: rgb(119, 109, 97);
-  top: 1301px;
-  border: 2px solid white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 0px;
+
+.parent .pen h1 {
+    color: burlywood;
+    font-size: 80px;
+    padding: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 20px;
+    text-decoration: underline white;
+}
+
+.parent .pen div img {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+
+}
+
+.parent .pencil {
+    position: absolute;
+    top: 190vh;
+    height: 100vh;
+    width: 80vw;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .pencil .pencil1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .pencil h1 {
+    color: burlywood;
+    font-size: 80px;
+    padding: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 20px;
+    text-decoration: underline white;
+}
+
+.parent .pencil div img {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+
+}
+
+.parent .book {
+    position: absolute;
+    top: 270vh;
+    height: 100vh;
+    width: 80vw;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .book .book1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .book h1 {
+    color: burlywood;
+    font-size: 80px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 20px;
+    text-decoration: underline white;
+}
+
+.parent .book div img {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+
+}
+
+.parent .eraser {
+    position: absolute;
+    top: 340vh;
+    height: 100vh;
+    width: 80vw;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .eraser .eraser1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .eraser h1 {
+    color: burlywood;
+    font-size: 80px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 20px;
+    text-decoration: underline white;
+}
+
+.parent .eraser div img {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+
+}
+
+.parent .eraser {
+    border-bottom: 2px solid black;
+}
+
+.parent .pen1 img:hover {
+    display: inline-block;
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.parent .pencil1 img:hover {
+    display: inline-block;
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.parent .book1 img:hover {
+    display: inline-block;
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.parent .eraser1 img:hover {
+    display: inline-block;
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.parent .footer {
+    position: absolute;
+    top: 440vh;
+    height: 60vh;
+    width: 80vw;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+.parent .footer h1 {
+    letter-spacing: 10px;
+    color: honeydew;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.parent .footer p {
+    letter-spacing: 10px;
+    color: honeydew;
+    font-size: 20px;
 }
